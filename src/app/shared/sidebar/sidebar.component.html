@@ -1,9 +1,9 @@
  
   <div class="bg-primary border-right p-3" id="sidebar">
     <h3 class="text-light">Gifs App</h3>
-    <div class="list-group list-reset">
-      <a href="#" class="list-group-item">
-        DashBoard
+    <div  class="list-group list-reset">
+      <a href="#" *ngFor="let historia of historial"class="list-group-item">
+        {{historia | titlecase}}
       </a>
     </div>
   </div>
