@@ -12,4 +12,8 @@ get historial(){
 
   constructor(private gifService:GifsService) { }
 
+  buscar(termino:string){
+    this.gifService.buscarGifs(termino);
+
+  }
 }
